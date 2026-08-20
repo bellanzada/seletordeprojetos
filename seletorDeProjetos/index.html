@@ -1,0 +1,176 @@
+
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meus Projetos</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Fundo dark moderno */
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        /* Navbar integrada com blur */
+        .navbar-custom {
+            background-color: rgba(30, 41, 59, 0.7) !important;
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #94a3b8 !important;
+        }
+
+        .navbar-custom .nav-link.active,
+        .navbar-custom .navbar-brand:hover {
+            color: #38bdf8 !important;
+        }
+
+        /* Gradiente no título principal */
+        .titulo-gradiente {
+            background: linear-gradient(to right, #22d3ee, #818cf8);
+
+        }
+
+        /* Estilização dos Cards Escuros */
+        .card-custom {
+            background-color: #1e293b !important;
+            border: 1px solid #334155 !important;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: #475569 !important;
+        }
+
+        .card-custom .card-title {
+            color: #f1f5f9;
+        }
+
+        .card-custom .card-text {
+            color: #94a3b8;
+        }
+
+        /* Botão estilizado */
+        .btn-custom {
+            background-color: #06b6d4 !important;
+            border: none !important;
+            color: #0f172a !important;
+            font-weight: 600;
+        }
+
+        .btn-custom:hover {
+            background-color: #22d3ee !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid d-flex flex-column min-vh-100 p-0">
+
+        <!-- Cabeçalho -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Projetos</a>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Em desenvolvimento</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="container my-auto py-5">
+            <section class="d-flex flex-column align-items-center text-center mb-5">
+                <h1 class="titulo-gradiente display-5">Aplicação Desenvolvimento de Sistema</h1>
+                <hr class="w-25 my-3" style="border-color: #334155; opacity: 1;">
+                
+                <!-- Tecnologias -->
+                <div class="d-flex align-items-center justify-content-center gap-4 text-secondary mt-2">
+                    <div class="d-flex align-items-center gap-2">
+                        <img width="32" height="32" src="https://img.icons8.com/nolan/96/html-5.png" alt="HTML5" />
+                        <span class="fw-medium text-light opacity-75">HTML5</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img width="32" height="32" src="https://img.icons8.com/nolan/96/css3.png" alt="CSS3" />
+                        <span class="fw-medium text-light opacity-75">CSS3</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid de Cards Organizado e Centralizado -->
+            <div class="row g-4 justify-content-center align-items-stretch">
+                
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card card-custom h-100 shadow-sm" style="width: 18rem;">
+                        <img src="./images/200w.gif" class="card-img-top" alt="GIF do Projeto 1">
+                        <div class="card-body d-flex flex-column text-center">
+q   
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text flex-grow-1">Desenvolvimento de interface responsiva e moderna usando conceitos avançados.</p>
+                            <a href="Projeitos/Projeto 1/Projeto1.html" class="btn btn-custom mt-auto">Ir para o Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card card-custom h-100 shadow-sm" style="width: 18rem;">
+                        <img src="./images/200w.gif" class="card-img-top" alt="GIF do Projeto 2">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text flex-grow-1">Arquitetura de dados e otimização de performance para aplicações web.</p>
+                            <a href="#" class="btn btn-custom mt-auto">Ir para o Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card card-custom h-100 shadow-sm" style="width: 18rem;">
+                        <img src="./images/200w.gif" class="card-img-top" alt="GIF do Projeto 3">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text flex-grow-1">Integração de APIs modernas e manipulação dinâmica de elementos via DOM.</p>
+                            <a href="#" class="btn btn-custom mt-auto">Ir para o Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer></footer>
+
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

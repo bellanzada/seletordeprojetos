@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuidados Com Animais no Verão</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+
+        header img {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+        }
+
+        header h1 {
+            display: inline;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .banner {
+            min-height: 300px;
+            background-image: url('wapps.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .btn-saiba-mais {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background-color: rgba(12, 11, 11, 0.9);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-saiba-mais:hover {
+            opacity: 0.8;
+        }
+
+        .secao-dicas {
+            background-color: #e0f7fa;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container-dicas {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .dica {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        @media (min-width: 768px) {
+            .container-dicas {
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .dica {
+                flex: 1;
+                margin: 0;
+            }
+        }
+
+        .secao-alerta {
+            background-color: #ffecb3;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./dog.jpg" alt="Logo">
+        <h1>Cuidados Com Animais no Verão</h1>
+    </header>0,1
+
+    <main>
+        <section class="banner">
+            <h2>Seu pet precisa de atenção no calor!</h2>
+            <p>Confira algumas dicas simples para manter seu amiguinho protegido.</p>
+
+            <a href="#pagina2" class="btn-saiba-mais">
+                Clique aqui Para saber mais!
+            </a>
+        </section>
+
+        <section id="pagina2" class="secao-dicas">
+            <h2>Dicas Importantes</h2>
+
+            <div class="container-dicas">
+                <div class="dica">
+                    <h3>1. Água Fresca</h3>
+                    <p>Mantenha sempre a vasilha com água limpa e fresca. Você pode colocar pedras de gelo nos dias mais quentes.</p>
+                </div>
+
+                <div class="dica">
+                    <h3>2. Horário dos Passeios</h3>
+                    <p>Passeie apenas no início da manhã ou no fim da tarde. O asfalto quente pode queimar as patinhas do pet.</p>
+                </div>
+
+                <div class="dica">
+                    <h3>3. Lembre-se da Sombra</h3>
+                    <p>Garanta que o animal tenha um local arejado e com sombra para descansar ao longo do dia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-alerta">
+            <h2>Fique Atento!</h2>
+            <p>Se o seu pet estiver cansadinho demais, respirando muito rápido ou babando em excesso, leve-o para um lugar fresco e consulte um veterinário.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site de Cuidados com Pets no Verão</p>
+    </footer>
+
+</body>
+
+</html>
